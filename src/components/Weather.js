@@ -26,15 +26,15 @@ const Weather = ({ capital }) => {
 
         {(typeof weather.main != "undefined") ? (
           <div>
-            <div className="location-box">
-              <div className="location"><i>Weather in <strong>{weather.name}</strong></i>:</div>
+            <div>
+              <div><i>Weather in <strong>{weather.name}</strong></i>:</div>
               <br></br>
             </div>
-            <div className="weather-box">
-              <div className="temp">
+            <div>
+              <div>
                 <i>temp</i>: {Math.round(weather.main.temp)}°C
             </div>
-              <div className="weather">
+              <div>
                 <i>visibility</i>: {weather.weather[0].main}
               </div>
             </div>
