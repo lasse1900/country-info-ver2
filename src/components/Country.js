@@ -5,7 +5,7 @@ const Country = ({ country }) => (
   <div>
     <h1>{country.name}</h1>
     <div>Capital: {country.capital}</div>
-    <div>Population: {country.population}</div>
+    <div>Population: {country.population / 1000000} milj</div>
     <h2>Languages</h2>
     <ul>
       {country.languages.map(language => (
