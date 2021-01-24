@@ -4,7 +4,10 @@ const Filter = ({ filter, handleFilter }) => {
   // console.log('fillter', filter)
   return (
       <div>
-        search: <input value={filter} onChange={handleFilter} />
+        search: <input 
+        placeholder="Give country name:"
+        value={filter} 
+        onChange={handleFilter} />
       </div>
   )
 }

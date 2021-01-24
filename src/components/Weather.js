@@ -15,17 +15,23 @@ const Weather = ({ capital }) => {
     <div>
       <main>
         <div>
+          <div>
+            <br></br>
+          </div>
           <button onClick={() => search()}>get weather in capital</button>
+          <div>
+            <br></br>
+          </div>
         </div>
 
         {(typeof weather.main != "undefined") ? (
           <div>
             <div className="location-box">
-              <div className="location">{weather.name}, {weather.sys.country}</div>
+              <div className="location">{weather.name}</div>
             </div>
             <div className="weather-box">
               <div className="temp">
-                {Math.round(weather.main.temp)}°c
+                {Math.round(weather.main.temp)}°C
             </div>
               <div className="weather">{weather.weather[0].main}</div>
             </div>
