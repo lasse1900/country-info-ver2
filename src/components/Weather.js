@@ -18,7 +18,7 @@ const Weather = ({ capital }) => {
           <div>
             <br></br>
           </div>
-          <button onClick={() => search()}>get weather in capital</button>
+          <button className="btn" onClick={() => search()}>get weather in capital</button>
           <div>
             <br></br>
           </div>

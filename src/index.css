@@ -1,3 +1,5 @@
+/* Global Styles */
+
 body {
   margin: 5px;
   padding: 5px;
@@ -6,8 +8,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--clr-bcg);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  transition: all 0.3s linear;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #666c7a;
+  --clr-primary: #666f7c;
+}
+
+.dark-theme {
+  --clr-bcg: #595e68;
+  --clr-font: #fff;
+  --clr-primary: #b8bcd4;
+}
+.light-theme {
+  --clr-bcg: #fff;
+  --clr-font: #626977;
+  --clr-primary: #b8bcd4;
+}
+
+
+
+/* Navbar */
+
+
+.btn {
+  background: var(--clr-primary);
+  color: var(--clr-bcg);
+  padding: 0.25rem 0.25rem;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
 }

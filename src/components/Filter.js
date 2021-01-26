@@ -5,6 +5,7 @@ const Filter = ({ filter, handleFilter }) => {
   return (
       <div>
         search: <input 
+        className="btn"
         placeholder="Give country name:"
         value={filter} 
         onChange={handleFilter} />
