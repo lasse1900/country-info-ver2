@@ -50,10 +50,9 @@ const App = () => {
     document.documentElement.className = theme;
     localStorage.setItem('theme', theme);
   }, [theme]);
-  
+
   return (
     <div>
-    
       <button className="btn" onClick={toggleTheme}>
         ligth/dark
       </button>

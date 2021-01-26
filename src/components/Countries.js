@@ -23,7 +23,7 @@ const Button = ({ country, setFilter, setFilteredCountries }) => {
     setFilter(country.name);
     setFilteredCountries([country]);
   };
-  return <button onClick={showCountry}>show</button>;
+  return <button className="btn" onClick={showCountry}>show</button>;
 };
 
 export default Countries;
